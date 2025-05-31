@@ -6,17 +6,18 @@ interface ButtonProps {
     children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({ className, path, children }) => {
+const Button: React.FC<ButtonProps> = ({ className = '', path, children }) => {
     if (path) {
         return (
-            <a href={path} className={className}>
-                {children}
+            <a href={path} className={`hover:bg-[#BE1E2D] ${className}`}>
+                {children} <span>→</span>
             </a>
         );
     }
+
     return (
-        <button className={className} >
-            {children}
+        <button className={`hover:bg-[#BE1E2D] ${className}`}>
+            {children}<span>→</span>
         </button>
     );
 };
