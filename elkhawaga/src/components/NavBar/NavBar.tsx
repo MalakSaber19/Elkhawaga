@@ -7,14 +7,14 @@ const NavBar: React.FC = () => {
             <div>
                 <img src={"/elkhawaga..logo -10 4 1.svg"} alt="" />
             </div>
-            <div className='flex justify-between items-center gap-6 p-4'>
+            <div className='flex justify-between items-center gap-6 p-4 archivo'>
                 <p>Home</p>
                 <p>Services</p>
                 <p>Portfolio</p>
                 <p>Pricing</p>
                 <p>About</p>
             </div>
-            <Button className=' rounded-[32px] border-2 border-[#BE1E2D] py-2 px-5 transition-all duration-300 ease-in-out' path='/contact'>
+            <Button className=' ' path='/contact'>
                 Contact us 
             </Button>
 

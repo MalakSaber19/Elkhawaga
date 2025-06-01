@@ -9,14 +9,20 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ className = '', path, children }) => {
     if (path) {
         return (
-            <a href={path} className={`hover:bg-[#BE1E2D] ${className}`}>
-                {children} <span>→</span>
-            </a>
+<a
+  href={path}
+  className={`archivo group relative inline-flex items-center justify-center overflow-hidden border-2 border-[#BE1E2D] py-2 px-7 rounded-[32px] transition-all duration-300 ease-in-out text-white ${className}`}
+>
+  <span className="relative z-10 group-hover:[text-shadow:3px_3px_8px_var(--tw-shadow-color)] shadow-white ">{children} →</span>
+
+
+  <div className="group-hover:[bg-shadow:10px_10px_8px_var(--tw-shadow-color)] shadow-[#BE1E2D] absolute -right-1 -bottom-3 w-5 h-16 bg-[#BE1E2D] rotate-[35deg] transition-all duration-300 ease-in-out group-hover:w-full group-hover:bottom-0 group-hover:right-0 group-hover:h-full group-hover:rotate-0 group-hover:rounded-[32px]" />
+</a>
         );
     }
 
     return (
-        <button className={`hover:bg-[#BE1E2D] ${className}`}>
+        <button className={className}>
             {children}<span>→</span>
         </button>
     );
