@@ -1,14 +1,9 @@
 import React from 'react';
 import Button from './Ui/Button';
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from 'react-icons/io';
+import { arrows } from '../data';
 
-const arrows = [
-    { icon: '/Vector.svg', title: 'Graphic Design',num:"+2" },
-    { icon: '/Vector.svg', title: 'Graphic Design',num:"+150" },
-    { icon: '/Vector.svg', title: 'Graphic Design',num:"95%" },
-    { icon: '/Vector.svg', title: 'Graphic Design',num:"+100" },
 
-];
 
 export default function About() {
 

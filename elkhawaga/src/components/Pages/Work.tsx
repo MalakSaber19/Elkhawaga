@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
-import { filters, images } from '../data';
+import { filters, images } from '../../data';
 
 export default function OurBestWorks() {
   const [activeCategory, setActiveCategory] = useState('Graphic Design');
@@ -53,24 +53,7 @@ export default function OurBestWorks() {
 
       {/* Slider */}
       <div className="flex flex-col items-center gap-8">
-        <div className="flex items-center justify-center gap-8">
-          {images.map((img, index) => (
-            <div
-              key={index}
-              className={`transition-all duration-300 overflow-hidden shadow-lg ${
-                index === currentIndex ? 'scale-110' : 'scale-95 blur-sm opacity-60'
-              }`}
-              style={{ width: '300px', height: '300px', borderRadius: '20px' }}
-            >
-              <img
-                src={img}
-                alt="img.alt"
-                className="object-cover w-full h-full"
-                style={{ borderRadius: '20px' }}
-              />
-            </div>
-          ))}
-        </div>
+
 
         {/* Arrows */}
         <div className='flex justify-center gap-4 mt-4'>

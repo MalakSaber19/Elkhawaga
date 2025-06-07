@@ -1,55 +1,82 @@
-import React from "react";
+import React from 'react';
+import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { MdOutlinePhone , MdOutlineEmail  } from "react-icons/md";
+import { SlLocationPin } from "react-icons/sl";
+
+
+
 
 export default function Footer() {
-    return (
-      <footer className="bg-[#222222] text-white py-10 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo & About */}
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Tech Yard</h2>
-            <p className="text-sm text-gray-400">
-              We build websites, brands, and marketing strategies to grow your business.
-            </p>
+  return (
+    <footer className="bg-[#1E1E1E] text-white py-12 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-[#333] pb-10">
+        {/* Logo and About */}
+        <div className="space-y-4">
+          <div className="flex flex-col justify-center items-start gap-2">
+            <img src="/elkhawaga..logo -10 4 1.svg" alt="logo" className="w-32 h-20" />
+            <div>
+              <h3 className="text-white font-bold">El-khawaga Degital Marketing</h3>
+            </div>
           </div>
-  
-          {/* Navigation */}
-          <div>
-            <h3 className="text-lg font-semibold mb-3">Navigation</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white">Home</a></li>
-              <li><a href="#" className="hover:text-white">Services</a></li>
-              <li><a href="#" className="hover:text-white">Portfolio</a></li>
-              <li><a href="#" className="hover:text-white">Contact</a></li>
-            </ul>
-          </div>
-  
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-3">Services</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white">Web Design</a></li>
-              <li><a href="#" className="hover:text-white">Social Media</a></li>
-              <li><a href="#" className="hover:text-white">Branding</a></li>
-              <li><a href="#" className="hover:text-white">E-commerce</a></li>
-            </ul>
-          </div>
-  
-          {/* Contact */}
-          <div>
-            <h3 className="text-lg font-semibold mb-3">Contact</h3>
-            <ul className="text-sm text-gray-400 space-y-2">
-              <li>Email: <a href="mailto:info@techyard.com" className="hover:text-white">info@techyard.com</a></li>
-              <li>Phone: <a href="tel:+201234567890" className="hover:text-white">+20 123 456 7890</a></li>
-              <li>Location: Cairo, Egypt</li>
-            </ul>
+          <p className="text-sm text-gray-400">
+            Lorem ipsum dolor sit amet consectetur. Scelerisque vitae et vitae suspendisse vulputate vestibulum tortor nisi cursus. Egestas nulla in
+          </p>
+          <div className="flex gap-3">
+            <div className="bg-[#BE1E2D] p-2 rounded-full"><FaFacebookF /></div>
+            <div className="bg-[#BE1E2D] p-2 rounded-full"><FaInstagram /></div>
+            <div className="bg-[#BE1E2D] p-2 rounded-full"><FaTwitter /></div>
+            <div className="bg-[#BE1E2D] p-2 rounded-full"><FaLinkedinIn /></div>
           </div>
         </div>
-  
-        {/* Bottom Bar */}
-        <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
-          © {new Date().getFullYear()} Tech Yard Web & Social Solutions. All rights reserved.
+
+        {/* Services */}
+        <div>
+          <h4 className="font-semibold mb-4">Services</h4>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li>Content Creation</li>
+            <li>Website Dev</li>
+            <li>Mobile Dev</li>
+            <li>SEO</li>
+          </ul>
         </div>
-      </footer>
-    );
-  }
-  
+
+        {/* Resources */}
+        <div>
+          <h4 className="font-semibold mb-4">Resources</h4>
+          <ul className="space-y-2 text-sm text-gray-300">
+            <li>Compliance</li>
+            <li>Case Studies</li>
+            <li>Webinars</li>
+            <li>Developers</li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h4 className="font-semibold mb-4">Contact Information</h4>
+          <ul className="space-y-3 text-md">
+            <li className="flex items-center gap-2 text-[#BE1E2D]">
+              <MdOutlineEmail  /> <span className="text-gray-300">canvaslancer@gmail.com</span>
+            </li>
+            <li className="flex items-center gap-2 text-[#BE1E2D]">
+              <MdOutlinePhone/> <span className="text-gray-300">+00012345678</span>
+            </li>
+            <li className="flex items-center gap-2 text-[#BE1E2D]">
+              <SlLocationPin /> <span className="text-gray-300">Lorem Ipsum Dummy text</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Footer Bottom */}
+      <div className="max-w-7xl mx-auto mt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 gap-4 px-4">
+        <p>Copyright © Canvas Lancer, 2023. All rights reserved.</p>
+        <div className="flex gap-6">
+          <a href="#" className="hover:text-white">Website Terms</a>
+          <a href="#" className="hover:text-white">Privacy Policy</a>
+          <a href="#" className="hover:text-white">Cookies Policy</a>
+        </div>
+      </div>
+    </footer>
+  );
+}
