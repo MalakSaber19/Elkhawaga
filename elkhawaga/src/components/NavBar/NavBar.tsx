@@ -15,7 +15,7 @@ const NavBar: React.FC = () => {
                 <p>About</p>
             </div>
             <Button className=' ' path='/contact'>
-                Contact us 
+                Contact us
             </Button>
 
         </nav>
