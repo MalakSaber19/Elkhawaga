@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import { filters, images } from '../data';
+import { NavLink } from 'react-router-dom';
 
 export default function OurBestWorks() {
   const [activeCategory, setActiveCategory] = useState('Graphic Design');
@@ -90,9 +91,11 @@ export default function OurBestWorks() {
 
         {/* See More Button */}
         <div className="flex justify-end w-full mt-8 pr-6">
+          <NavLink to={"/work"}>
           <button className="w-[166px] h-[57px] flex items-center justify-center gap-2 border border-white rounded-full hover:border-[#BE1E2D] hover:text-[#BE1E2D] transition">
             See More <FaLongArrowAltRight />
           </button>
+          </NavLink>
         </div>
       </div>
     </section>

@@ -62,6 +62,16 @@ export const plans = [
 
   
   ];
+  export const image = [
+    '/Person in Orange Beanie Working on Laptop.jpeg',
+    '/patrick-frossard-nYWfclD5jnI-unsplash (1).jpg',
+    '/Rectangle 25.png',
+    '/Rectangle 44.png',
+
+
+
+  
+  ];
 
   export const arrows = [
     { icon: '/Vector.svg', title: 'Graphic Design',num:"+2" },
