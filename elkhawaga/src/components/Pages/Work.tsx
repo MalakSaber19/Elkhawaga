@@ -3,8 +3,10 @@ import { useState } from 'react';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import { filters, images } from '../../data';
+import MainLayout from '../MainLayout';
+import Button from '../Ui/Button';
 
-export default function OurBestWorks() {
+export default function Works() {
   const [activeCategory, setActiveCategory] = useState('Graphic Design');
   const [currentIndex, setCurrentIndex] = useState(1);
 
@@ -17,9 +19,10 @@ export default function OurBestWorks() {
   };
 
   return (
-    <section className="bg-[#1E1E1E] text-white py-20 px-6 relative mt-32">
+    <MainLayout>
+    <section className="bg-[#1E1E1E] text-white py-40 px-6 relative ">
       {/* Sidebar Text */}
-      <div className='absolute archivo -left-14 top-28 bg-[#BE1E2D] w-[165px] h-[55px] rotate-270 text-white flex justify-center items-center text-[18px] font-medium'>
+      <div className='absolute archivo -left-14 top-40 bg-[#BE1E2D] w-[165px] h-[55px] rotate-270 text-white flex justify-center items-center text-[18px] font-medium'>
         <p> WHAT WE DO</p>
       </div>
 
@@ -28,7 +31,7 @@ export default function OurBestWorks() {
       <div className="absolute right-40 top-56 text-white text-6xl">✦</div>
 
       {/* Section Title */}
-      <h2 className="racing-sans text-[48px] text-center font-racing text-white mb-4">
+      <h2 className="racing-sans text-[48px] text-center font-racing text-white mb-4 mt-20">
         Our Best <span className='bg-[#BE1E2D] rounded-[16px] py-2 px-4 inline-block'>Works</span>
       </h2>
 
@@ -53,6 +56,9 @@ export default function OurBestWorks() {
 
       {/* Slider */}
       <div className="flex flex-col items-center gap-8">
+        <div>
+            <img src={"/Colorful Sticky Notes Brainstorming.jpeg"} alt="" />
+        </div>
 
 
         {/* Arrows */}
@@ -72,12 +78,12 @@ export default function OurBestWorks() {
         </div>
 
         {/* See More Button */}
-        <div className="flex justify-end w-full mt-8 pr-6">
-          <button className="w-[166px] h-[57px] flex items-center justify-center gap-2 border border-white rounded-full hover:border-[#BE1E2D] hover:text-[#BE1E2D] transition">
-            See More <FaLongArrowAltRight />
-          </button>
-        </div>
+        <Button className=' w-[225px] h-[60px]' path='/contact'>
+          Discover
+        </Button>
+
       </div>
     </section>
+    </MainLayout>
   );
 }
