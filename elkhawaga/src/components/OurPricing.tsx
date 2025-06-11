@@ -5,7 +5,7 @@ import { plans } from '../data';
 export default function OurPricing() {
 
     return (
-        <section className="bg-white text-[#1E1E1E] py-16 px-6 relative mt-32 ">
+        <section id='pricing' className="bg-white text-[#1E1E1E] py-16 px-6 relative mt-32 ">
 
 
             {/* Section Title */}

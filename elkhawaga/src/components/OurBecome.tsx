@@ -4,7 +4,7 @@ import Button from './Ui/Button';
 export default function OurBecome() {
 
     return (
-        <section className="bg-[#1E1E1E] text-white py-16 px-6 relative mt-32 ">
+        <section className="bg-[#1E1E1E] text-white py-16 px-6 relative  ">
             {/* Sidebar Text */}
             <div className=' absolute archivo -left-14 top-28 bg-[#BE1E2D] w-[165px] h-[55px] rotate-270 text-white flex justify-center items-center text-[18px] font-medium'>
                 <p> WHAT WE DO</p>

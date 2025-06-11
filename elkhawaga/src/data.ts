@@ -62,16 +62,43 @@ export const plans = [
 
   
   ];
+
   export const image = [
     '/Person in Orange Beanie Working on Laptop.jpeg',
     '/patrick-frossard-nYWfclD5jnI-unsplash (1).jpg',
     '/Rectangle 25.png',
     '/Rectangle 44.png',
 
-
-
-  
   ];
+  export const dataServices = [
+    {src:'/Person in Orange Beanie Working on Laptop.jpeg', num:"01" ,title:"social media Posts & ADS & Article", subtitle:"We start by getting to know our clients, their business goals, and their target audience."},
+    {src:'/Person in Orange Beanie Working on Laptop.jpeg', num:"02" ,title:"social media Posts & ADS & Article", subtitle:"We start by getting to know our clients, their business goals, and their target audience."},
+    {src:'/Person in Orange Beanie Working on Laptop.jpeg', num:"03" ,title:"social media Posts & ADS & Article", subtitle:"We start by getting to know our clients, their business goals, and their target audience."},
+    {src:'/Person in Orange Beanie Working on Laptop.jpeg', num:"04" ,title:"social media Posts & ADS & Article", subtitle:"We start by getting to know our clients, their business goals, and their target audience."}
+    
+
+
+  ];
+  
+  export const AboutImage = [
+    {src:'/unsplash_A3MleA0jtoE.png', title: "sara Zain", subtitle: "Graphic Designer"},
+    {src:'/unsplash_ABuzWPku1Ug.png', title: "John Doe", subtitle: "Web Developer"},
+    {src:'/unsplash_A3MleA0jtoE.png', title: "sara", subtitle: "Software Engineer"},
+
+
+  ];
+
+  export const LogoPartners = [
+    "../public/techLogo.svg",
+    "../public/elkhawaga.svg",
+    "../public/logo.svg",
+
+
+
+
+  ];
+
+
 
   export const arrows = [
     { icon: '/Vector.svg', title: 'Graphic Design',num:"+2" },

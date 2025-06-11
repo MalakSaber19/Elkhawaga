@@ -8,7 +8,7 @@ import { arrows } from '../data';
 export default function About() {
 
     return (
-        <section className=" text-[#1E1E1E] py-16 px-6 relative mt-32 ">
+        <section className=" text-[#1E1E1E] py-16 px-6 relative mt-20 ">
 
             {/* Section Title */}
             <div className='flex flex-col justify-center items-center gap-10'>
