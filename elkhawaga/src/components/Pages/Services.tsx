@@ -12,7 +12,6 @@ export default function Services() {
   } | null>(null);
 
 
-
   return (
     <MainLayout>
       <section className="bg-[#1E1E1E] text-white py-40 px-6 relative ">

@@ -10,8 +10,10 @@ import Button from "../Ui/Button";
 export default function AboutPage() {
   return (
     <MainLayout>
-      <section className="mb-10">
-        <div className="bg-[#1E1E1E] text-white py-28 px-6 relative mb-8 overflow-hidden"></div>
+      <section className="mb-10 overflow-hidden">
+        <div className="bg-[#1E1E1E] py-24 px-10 w-[110%] -translate-x-[5%] -rotate-3  mb-8 overflow-hidden relative -top-3 origin-left">
+          <div className="bg-[#BE1E2D] py-2 px-2  w-[50%] -rotate-1  mb-8 absolute -bottom-10 right-1 -z-10"></div>
+        </div>
 
         <About></About>
 
