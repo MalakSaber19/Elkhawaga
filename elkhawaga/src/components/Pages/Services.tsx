@@ -3,6 +3,8 @@ import MainLayout from "../MainLayout";
 import { dataServices, filters, image } from "../../data";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 import Button from "../Ui/Button";
+import { NavLink } from "react-router";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function Services() {
   const [activeCategory, setActiveCategory] = useState("Graphic Design");
@@ -10,7 +12,6 @@ export default function Services() {
     src: string;
     alt: string;
   } | null>(null);
-
 
   return (
     <MainLayout>
@@ -56,7 +57,7 @@ export default function Services() {
         </div>
 
         {/* Slider */}
-        <div className="flex flex-col items-center gap-8">
+        <div className="flex flex-col items-center gap-8 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 max-w-9xl mx-auto">
             {dataServices.map((img, index) => (
               <div
@@ -75,27 +76,36 @@ export default function Services() {
                   className={`w-[550px] h-[300px] object-cover rounded-[32px]`}
                 />
                 <div className="flex flex-col gap-4">
-                  <p className="racing-sans font-racing text-[40px] font-normal text-white">{img.title}</p>
-                  <p className="archivo text-[18px] font-normal text-[#ffffffd8]">{img.subtitle}</p>
+                  <p className="racing-sans font-racing text-[40px] font-normal text-white">
+                    {img.title}
+                  </p>
+                  <p className="archivo text-[18px] font-normal text-[#ffffffd8]">
+                    {img.subtitle}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
-
-
-          {/* See More Button */}
-          <div className="flex justify-center items-center gap-[37px] mt-20">
-
-          <Button className=" w-[225px] h-[60px]" path="/contact">
-            Contact us
-          </Button>
-          <Button className=" w-[225px] h-[60px]" path="/contact">
-            Show Our Experts
-          </Button>
-          </div>
         </div>
 
       </section>
+        <div className="bg-[#FFFFFF] py-32 px-10 w-[110%] -translate-x-[5%] -rotate-4  mb-8 overflow-hidden relative -top-3 origin-left ">
+          <div className="bg-[#BE1E2D] py-4 px-2  w-[70%] -rotate-2  mb-8 absolute -top-6 laft-0 -z-10"></div>
+          <div className="rotate-4 text-[#222222] flex justify-center items-center gap-6 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+            <Button
+              className="  w-[225px] h-[60px] hover:text-white"
+              path="/contact"
+            >
+              Contact us{" "}
+            </Button>
+
+            <NavLink to={"/work"}>
+              <button className="w-[225px] h-[57px] flex items-center justify-center gap-2 border border-[#222222] rounded-full hover:border-[#BE1E2D] hover:text-[#BE1E2D] transition">
+                See More <FaLongArrowAltRight />
+              </button>
+            </NavLink>
+          </div>
+        </div>
     </MainLayout>
   );
 }

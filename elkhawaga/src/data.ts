@@ -51,17 +51,42 @@ export const plans = [
   ];
 
   export const filters = ['Graphic Design', 'Video Graphic', 'Visual Design'];
-  export const images = [
-      '/Person in Orange Beanie Working on Laptop.jpeg',
-      '/patrick-frossard-nYWfclD5jnI-unsplash (1).jpg',
-      '/Person in Orange Beanie Working on Laptop.jpeg',
-      '/patrick-frossard-nYWfclD5jnI-unsplash (1).jpg',
-      '/Person in Orange Beanie Working on Laptop.jpeg',
+ export const images = [
+  { src: '/Person in Orange Beanie Working on Laptop.jpeg', alt: 'Image 1' },
+  { src: '/Property 1=Default.png', alt: 'Image 1' },
+  { src: '/Rectangle 44.png', alt: 'Image 1' },
+  { src: '/Rectangle 25.png', alt: 'Image 1' },
+];
 
+export const section = [
+  {
+    src: "/patrick-frossard-nYWfclD5jnI-unsplash (1).jpg",
+    alt: "Image 1",
+    rotate: "rotate-6"
+  },
+  {
+    src: "/Person in Orange Beanie Working on Laptop.jpeg",
+    alt: "Image 2",
+    rotate: "-rotate-6"
+  },
+  {
+    src: "/patrick-frossard-nYWfclD5jnI-unsplash (1).jpg",
+    alt: "Image 3",
+    rotate: "rotate-6"
+  },
+  {
+    src: "/Person in Orange Beanie Working on Laptop.jpeg",
+    alt: "Image 4",
+    rotate: "-rotate-6"
+  },
+];
 
-
-  
-  ];
+export const items = [
+  { number: "01", text: "Content Creation / Management" },
+  { number: "02", text: "Content Creation / Management" },
+  { number: "03", text: "Content Creation / Management" },
+  { number: "04", text: "Content Creation / Management" },
+];
 
   export const image = [
     '/Person in Orange Beanie Working on Laptop.jpeg',
