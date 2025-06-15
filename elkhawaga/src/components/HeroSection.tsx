@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
         <p className="text-[#DDDDDD] text-[20px] lg:text-[24px]  text-center archivo">
           Katalyst Design Studio is a dynamic and innovative design agency that brings creative ideas to life.  We works with a wide range of clients to develop unique and effective branding, web design, and graphic design solutions.
         </p>
-        <Button className=' mt-[10px] lg:mt-[35px] w-[225px] h-[60px]' path='/contact'>
+        <Button className='inline-flex mt-[10px] lg:mt-[35px] w-[225px] h-[60px]' path='/contact'>
           Discover
         </Button>
       </div>

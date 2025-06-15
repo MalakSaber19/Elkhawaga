@@ -81,6 +81,29 @@ export const section = [
   },
 ];
 
+export const faqs = [
+    {
+      question: "What is your return policy?",
+      answer: "You can return any item within 30 days of purchase for a full refund.",
+    },
+    {
+      question: "Do you offer international shipping?",
+      answer: "Yes, we ship to over 50 countries worldwide.",
+    },
+    {
+      question: "Do you offer international shipping?",
+      answer: "Yes, we ship to over 50 countries worldwide.",
+    },
+    {
+      question: "Do you offer international shipping?",
+      answer: "Yes, we ship to over 50 countries worldwide.",
+    },
+    {
+      question: "How can I track my order?",
+      answer: "You will receive a tracking number via email once your order is shipped.",
+    },
+  ];
+
 export const items = [
   { number: "01", text: "Content Creation / Management" },
   { number: "02", text: "Content Creation / Management" },

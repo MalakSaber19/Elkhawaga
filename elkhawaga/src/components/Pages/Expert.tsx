@@ -105,7 +105,7 @@ export default function Expert() {
         <div className="bg-[#BE1E2D] py-4 px-2  w-[70%] -rotate-2  mb-8 absolute -top-6 laft-0 -z-10"></div>
         <div className="rotate-4 text-[#222222] flex justify-center items-center gap-6 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
           <Button
-            className="  w-[225px] h-[60px] hover:text-white"
+            className=" inline-flex w-[225px] h-[60px] hover:text-white"
             path="/contact"
           >
             {" "}

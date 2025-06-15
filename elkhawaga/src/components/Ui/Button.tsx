@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = ({ className = '', path, children }) => {
         return (
             <a
                 href={path}
-                className={`archivo group relative inline-flex items-center justify-center overflow-hidden border-2 border-[#BE1E2D] py-2 px-7 rounded-[32px] transition-all duration-300 ease-in-out  ${className}`}
+                className={`archivo group relative  items-center justify-center overflow-hidden border-2 border-[#BE1E2D] py-2 px-7 rounded-[32px] transition-all duration-300 ease-in-out  ${className}`}
             >
                 <span className="relative z-10 group-hover:[text-shadow:3px_3px_8px_var(--tw-shadow-color)] shadow-white ">{children}   →</span>
 

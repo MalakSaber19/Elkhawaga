@@ -11,14 +11,14 @@ export default function AboutPage() {
   return (
     <MainLayout>
       <section className="mb-10 overflow-hidden">
-        <div className="bg-[#1E1E1E] py-24 px-10 w-[110%] -translate-x-[5%] -rotate-3  mb-8 overflow-hidden relative -top-3 origin-left">
+        <div className="bg-[#1E1E1E] py-14 lg:py-24 px-10 w-[110%] -translate-x-[5%] -rotate-3  mb-8 overflow-hidden relative -top-3 origin-left">
           <div className="bg-[#BE1E2D] py-2 px-2  w-[50%] -rotate-1  mb-8 absolute -bottom-10 right-1 -z-10"></div>
         </div>
 
         <About></About>
 
         <div className="flex justify-center gap-[56px] mt-20 ">
-          <div className="flex flex-col gap-[25px] w-[757px]">
+          <div className="flex flex-col gap-[25px] lg:w-[757px]">
             <h2 className="racing-sans font-racing text-[48px] text-black">
               {" "}
               <span className="text-white w-[233px] h-[60px] bg-[#BE1E2D] rounded-[16px] py-1 px-3 mr-2">
@@ -26,7 +26,7 @@ export default function AboutPage() {
               </span>{" "}
               Are{" "}
             </h2>
-            <p className="text-[24px] font-normal text-[#222222b7] archivo">
+            <p className="text-[18px] lg:text-[24px] font-normal text-[#222222b7] archivo">
               Despite being a small team, we believe that our size gives us an
               advantage, allowing us to be nimble, adaptable, and able to work
               closely with our clients to deliver truly awesome designs.
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 and achieving their goals efficiently and effectively.
               </p>
             </div>
-            <div className=" absolute z-30 top-[190px] md:top-[280px] md:right-[10%] md:w-[650px] text-[#FFFFFF] ">
+            <div className=" absolute z-30 md:top-[280px] md:right-[10%] md:w-[650px] text-[#FFFFFF] ">
               <h2 className="text-[25px]  md:text-[35px] racing-sans font-racing font-bold">
                 Our{" "}
                 <span className="bg-[#BE1E2D] px-1 rounded-lg  text-[#FFF]">
@@ -88,11 +88,11 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          <div className="w-[2000px] h-4 bg-white rotate-[-10deg] absolute right-0 mt-60"></div>
+          <div className="w-[2000px] h-2 lg:h-4 bg-white rotate-[-10deg] absolute right-0 mt-60"></div>
           <div className="w-[200%] md:rotate-[-15deg] h-[550px] -z-10 bg-[#222222]  absolute top-0"></div>
           <div className="w-[200%] md:rotate-[0deg] h-[550px] -z-10 bg-[#222222]  absolute bottom-0"></div>
-          <div className="absolute right-96 top-14 text-white text-6xl">✦</div>
-          <div className="absolute left-96 bottom-14 text-white text-6xl">
+          <div className="absolute right-96 top-14 text-white text-4xl lg:text-6xl">✦</div>
+          <div className="absolute left-96 bottom-14 text-white text-4xl lg:text-6xl">
             ✦
           </div>
         </section>
@@ -158,7 +158,7 @@ export default function AboutPage() {
           </div>
 
           <Button
-            className=" mt-[35px] w-[225px] h-[60px] hover:text-white"
+            className=" inline-flex mt-[35px] w-[225px] h-[60px] hover:text-white"
             path="/contact"
           >
             {" "}
